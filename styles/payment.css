@@ -1,0 +1,23 @@
+#payment{
+    margin: auto;
+    width: 32%;
+    margin-top: 50px;
+}
+#body{
+    background-color: #EDE7F6;
+}
+form>input{
+    width: 100%;
+    margin-top: 10px;
+}
+#button{
+    background-color: purple;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    height: 55px;
+    border: none;
+}

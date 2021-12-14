@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals</title>
+    <link rel="stylesheet" href="./styles/new1.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <style>
+        #new1{ background-color: white;
+ color: #623381; font-weight: bold;
+        }
+     </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="navbaroptions" class="bg"></div>
+    <!-- <button id="sort">SORT Below 500</button>
+    <button id="sort300">SORT BELOW 300</button> -->
+
+    <div id="body">
+        <div id="image">
+            <div>
+                <p id="gift"> Gift & Specials <span> > </span> <span id="new">New Arrivals</span></p>
+                <h1>NEW ARRIVALS</h1>
+            </div>
+            <div>
+                <img src="https://a.cdnsbn.com/images/English/category_EarlyBirdSale8offNov21_692_1.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="box">
+            <div id="combine">
+                <div id="newarrivals">
+                    <h3>New Arrivals</h3>
+                    <p>Skincare(10)</p>
+                    <p>Make UP(5)</p>
+                    <p>Hair Care(4)</p>
+                    <p>Men's Cologne(6)</p>
+                    <p>Women's Perfume(5)</p>
+                </div>
+
+                <div id="refine">
+                    <h3>Refine by Brands</h3>
+                    <div id="brands">
+                        <div>
+                            <input type="checkbox" id="revolve"><label for="">Revolve</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mercari"><label for="">Mercari</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="3wclinic"><label for="">3w clinic</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="111skin"><label for="">111 Skin</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Hermes"><label for="">Hermes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="gucci"><label for="">Gucci</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sisley"><label for="">Sisley</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sk11"><label for="">SK 11</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Paco"><label for="">Paco Rabanne</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="gucci"><label for="">Nuxo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Hermes"><label for="">Payot</label>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div id="image">
+                    <h3>New Arrivals</h3>
+                    <p id="hover">Worldwide RRP converted to INR</p>
+
+                </div>
+                <div id="line"></div>
+                <div id="filter">
+                    <button id="sort">SORT BELOW Rs.500</button>
+                    <button id="sort300">SORT ABOVE Rs.1000</button>
+                </div>
+                <div id="products"></div>
+                <div id="sortingproducts"></div>
+                <di id="sorting300">
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- FOOTER JS END -->
+
+    <div id="footerEndPush"></div>
+
+    <!-- FOOTER JS END -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+
+</html>
+<script src="./js elements/new1.js"></script>
+<script type="module">
+    import { headerupper, navbarbelow } from './js elements/header.js'
+    let head = document.getElementById('header')
+    head.innerHTML = headerupper();
+    let navbaroptions = document.getElementById("navbaroptions");
+    navbaroptions.innerHTML = navbarbelow();
+
+    // END FOOTER JS PART
+
+    var footerEndPush = document.getElementById('footerEndPush')
+
+    import footer from './js elements/footer.js'
+
+    footerEndPush.innerHTML = footer()
+
+    // END FOOTER JS PART
+</script>
