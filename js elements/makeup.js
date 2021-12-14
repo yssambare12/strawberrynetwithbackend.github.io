@@ -1,10 +1,10 @@
 async function getdata(){
-    let res =  await fetch(`https://serpapi.com/search.json?engine=google&q=make+up+products&google_domain=google.com&gl=us&hl=en&tbm=shop&start=40&num=40&api_key=953d7eca211a134cd79c6e4fb3ae05b46cc51e56d88b59900029f16ce695f7d0`)
+    let res =  await fetch(`http://localhost:4000/makeup`)
     let data = await res.json()
-    console.log(data)
+    console.log(data.makeupproducts)
     //console.log(data.inline_shopping_results);
     
-    showdata(data.inline_shopping_results)
+    showdata(data.makeupproducts)
 }
 
 getdata()
