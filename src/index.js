@@ -15,4 +15,11 @@ app.use("/mensskincare", mensskincareController)
 const menscologneController = require("./controllers/menscologne.controller")
 app.use("/menscologne", menscologneController)
 
+
+
+const cartController = require("./controllers/cartpage.controller")
+app.use("/cart", cartController)
+
+
+
 module.exports = app
