@@ -22,4 +22,9 @@ app.use("/cart", cartController)
 
 
 
+const userdataController = require("./controllers/userdata.controller")
+app.use("/user", userdataController)
+
+
+
 module.exports = app
