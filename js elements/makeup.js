@@ -66,14 +66,13 @@ function gotonewarr(product){
 let list = document.getElementById('list')
 list.addEventListener('click', showlist)
 async function showlist(){
-    let res =  await fetch(`https://serpapi.com/search.json?engine=google&q=make+up+products&google_domain=google.com&gl=us&hl=en&tbm=shop&start=40&num=40&api_key=953d7eca211a134cd79c6e4fb3ae05b46cc51e56d88b59900029f16ce695f7d0`)
+    let res =  await fetch(`http://localhost:4000/makeup`)
     let data = await res.json()
     console.log(data)
-    console.log(data.inline_shopping_results);
-    showdatainlist(data.inline_shopping_results)
+    console.log(data.makeupproducts);
+    showdatainlist(data.makeupproducts)
 }
 function showdatainlist(products){
-    console.log(products)
     let produc = document.getElementById('products')
     produc.innerHTML = null;
     produc.style.display = "grid"
@@ -156,57 +155,55 @@ function getchange(){
         lowtohi()
     } else if(select == "AtoZ"){
         atoz()
-    } else if(select == "ZtoA"){
-        ztoa()
+    } else if(select == "hipri"){
+        hipri()
     }
 }
 async function showlistbypop(){
-    let res =  await fetch(`https://serpapi.com/search.json?engine=google&q=make+up+products&google_domain=google.com&gl=us&hl=en&tbm=shop&start=40&num=40&api_key=953d7eca211a134cd79c6e4fb3ae05b46cc51e56d88b59900029f16ce695f7d0`)
+    let res =  await fetch(`http://localhost:4000/makeup`)
     let data = await res.json()
     console.log(data)
-    console.log(data.inline_shopping_results);
-    let arr = data.inline_shopping_results
+    console.log(data.makeupproducts);
+    let arr = data.makeupproducts
     let sor = arr.sort((a, b)=>{
         return a.rating - b.rating
     })
     console.log(sor)
-    showdatainlist(data.inline_shopping_results)
+    showdatainlist(sor)
 }
 async function lowtohi(){
-    let res =  await fetch(`https://serpapi.com/search.json?engine=google&q=make+up+products&google_domain=google.com&gl=us&hl=en&tbm=shop&start=40&num=40&api_key=953d7eca211a134cd79c6e4fb3ae05b46cc51e56d88b59900029f16ce695f7d0`)
+    let res =  await fetch(`http://localhost:4000/makeup`)
     let data = await res.json()
     console.log(data)
-    console.log(data.inline_shopping_results);
-    let arr = data.inline_shopping_results
+    console.log(data.makeupproducts);
+    let arr = data.makeupproducts
     let sor = arr.sort((a, b)=>{
         return a.extracted_price - b.extracted_price
     })
     console.log(sor)
-    showdatainlist(data.inline_shopping_results)
+    showdatainlist(sor)
 }
 async function atoz(){
-    let res =  await fetch(`https://serpapi.com/search.json?engine=google&q=make+up+products&google_domain=google.com&gl=us&hl=en&tbm=shop&start=40&num=40&api_key=953d7eca211a134cd79c6e4fb3ae05b46cc51e56d88b59900029f16ce695f7d0`)
+    let res =  await fetch(`http://localhost:4000/makeup`)
     let data = await res.json()
     console.log(data)
-    console.log(data.inline_shopping_results);
-    let arr = data.inline_shopping_results
+    console.log(data.makeupproducts);
+    let arr = data.makeupproducts
     let sor = arr.sort((a, b)=>{
         return a.title - b.title
     })
     console.log(sor)
-    showdatainlist(data.inline_shopping_results)
+    showdatainlist(sor)
 }
-async function ztoa(){
-    let res =  await fetch(`https://serpapi.com/search.json?engine=google&q=make+up+products&google_domain=google.com&gl=us&hl=en&tbm=shop&start=40&num=40&api_key=953d7eca211a134cd79c6e4fb3ae05b46cc51e56d88b59900029f16ce695f7d0`)
+async function hipri(){
+    let res =  await fetch(`http://localhost:4000/makeup`)
     let data = await res.json()
-    console.log(data)
-    console.log(data.inline_shopping_results);
-    let arr = data.inline_shopping_results
+    let arr = data.makeupproducts
     let sor = arr.sort((a, b)=>{
         return b.extracted_price - a.extracted_price
     })
     console.log(sor)
-    showdatainlist(data.inline_shopping_results)
+    showdatainlist(sor)
 }
 //https://serpapi.com/search.json?engine=google&q=skin+care+products&google_domain=google.com&gl=us&hl=en&tbm=shop&start=40&num=40&api_key=e49a0f332c094848e532986cf73547b488cdfb3006985473e559d3d9c8194354
 //https://serpapi.com/search.json?engine=google&q=make+up+products&google_domain=google.com&gl=us&hl=en&tbm=shop&start=40&num=40&api_key=e49a0f332c094848e532986cf73547b488cdfb3006985473e559d3d9c8194354
