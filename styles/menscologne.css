@@ -121,5 +121,9 @@
     width: 170px;
 }
 
-v
-
+.h5-price-tag {
+    color: white;
+    line-height: 170px;
+    font-weight: 600;
+    text-align: center;
+}

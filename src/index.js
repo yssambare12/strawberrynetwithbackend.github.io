@@ -12,5 +12,7 @@ const perfumeController = require("./controllers/perfume.controller")
 app.use("/perfume", perfumeController)
 const mensskincareController = require("./controllers/mensskincare.controller")
 app.use("/mensskincare", mensskincareController)
+const menscologneController = require("./controllers/menscologne.controller")
+app.use("/menscologne", menscologneController)
 
 module.exports = app
