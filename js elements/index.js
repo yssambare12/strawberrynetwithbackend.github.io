@@ -232,6 +232,7 @@ if (localStorage.getItem("cart") === null) {
 let sum = 0;
 var counter = 0;
 function addtoCart(p) {
+  console.log(p)
   let kohl_cart = JSON.parse(localStorage.getItem("cart"));
   kohl_cart.push(p);
   localStorage.setItem("cart", JSON.stringify(kohl_cart));

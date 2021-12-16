@@ -1,4 +1,4 @@
-function headerupper(){
+function headerupper() {
   return `<div>
   <img onclick="location.href='index.html'" src="https://i.ibb.co/RzDqBPB/logo.png" alt="" >
 </div>
@@ -7,8 +7,8 @@ function headerupper(){
 <div id="searchbar">
   <input type="text" placeholder="SEARCH BRAND/PRODUCT" id="inputdata" >
   <ion-icon name="search"></ion-icon>
-</div>   
-<div >
+</div>
+<div>
   <button>Natural Beauty</button>
   <button>Estee Lauder</button>
   <button>Shiseido</button>
@@ -82,8 +82,8 @@ function headerupper(){
 </div>
 </div>`;
 }
-function navbarbelow(){
-return `<div class="nav-barCenter">
+function navbarbelow() {
+  return `<div class="nav-barCenter">
 <div class="dropdown">
     <div class="dropbtn"><ion-icon name="menu"></ion-icon>SHOP BY BRAND</div>
     <div class="dropdown-content">
@@ -350,5 +350,4 @@ return `<div class="nav-barCenter">
 </div>`;
 }
 
-
-export  {headerupper,navbarbelow};
+export { headerupper, navbarbelow };

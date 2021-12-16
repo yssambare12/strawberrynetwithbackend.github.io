@@ -105,6 +105,9 @@ background-color: white;
  height: 15px;
  background-color: white;
 }
+/* #headermiddle>div:nth-child(3){
+  color: #623381;
+} */
 #searchbar + div{
     margin-top: 10px;
     display: grid;

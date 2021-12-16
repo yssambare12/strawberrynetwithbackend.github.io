@@ -11,11 +11,11 @@ router.get("/", async (req, res) => {
   }
 });
 router.post("/", async (req, res) => {
-    try {
-      const cartitem = await Cart.create(req.body).lean().exec();
-      return res.status(200).json({ cartitem });
-    } catch (e) {
-      return res.status(500).json({ message: e.message, Status: "Failed" });
-    }
-  });
+  try {
+    const cartitem = await Cart.create(req.body).lean().exec();
+    return res.status(200).json({ cartitem });
+  } catch (e) {
+    return res.status(500).json({ message: e.message, Status: "Failed" });
+  }
+});
 module.exports = router;
