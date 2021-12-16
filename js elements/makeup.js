@@ -205,6 +205,74 @@ async function hipri(){
     console.log(sor)
     showdatainlist(sor)
 }
+
+
+// Debouncing
+let timerId;
+let timerId2;
+function debounce(){
+  let product_name=document.getElementById("inputdata").value;
+if(product_name.length>2){
+  if(timerId){
+  clearTimeout(timerId);
+  }
+   timerId=setTimeout( async function(){
+     await productOptions();
+  },2000);
+}else{
+  document.getElementById("productOptions").style.display="none";
+}
+
+}
+async function productOptions(){
+    try{
+  var allProducts=await searchProduct();
+
+  document.getElementById("productOptions").innerHTML=null;
+  console.log(allProducts.length,document.getElementById("inputdata").value);
+
+    allProducts.forEach(function (oneProduct){
+      let name=document.createElement("p");
+       name.innerText=oneProduct.title;
+      let title=oneProduct.title;
+      title=title.split(" ");
+      if(title.includes(document.getElementById("inputdata").value)){
+      document.getElementById("productOptions").append(name)
+      name.onclick=function(){
+        gotonewarr(oneProduct)
+        window.location.href = "newarr.html"
+        
+       }
+       document.getElementById("productOptions").style.display="block"; 
+      }
+    });
+    if(timerId2!=null){
+      clearTimeout(timerId2);
+      }
+       timerId2=setTimeout(  function(){
+          displaynone();
+      },9000);
+    }catch(e){
+      console.log( e);
+    }
+}
+function displaynone(){
+  document.getElementById("productOptions").style.display="none";
+}
+async function searchProduct(){ 
+ try{ querry=document.getElementById("inputdata").value;
+ let res=await fetch(`http://localhost:4000/skincare`);
+ let data=await res.json();
+ return data.skincareproducts;
+}catch(e){
+  console.log( e);
+}
+}
+async function searchableData(){
+let data=await searchProduct();
+console.log("Narendra",data)
+searchableData(data)
+}
 //https://serpapi.com/search.json?engine=google&q=skin+care+products&google_domain=google.com&gl=us&hl=en&tbm=shop&start=40&num=40&api_key=e49a0f332c094848e532986cf73547b488cdfb3006985473e559d3d9c8194354
 //https://serpapi.com/search.json?engine=google&q=make+up+products&google_domain=google.com&gl=us&hl=en&tbm=shop&start=40&num=40&api_key=e49a0f332c094848e532986cf73547b488cdfb3006985473e559d3d9c8194354
 

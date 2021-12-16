@@ -1,14 +1,14 @@
 function headerupper() {
   return `<div>
-  <img onclick="location.href='index.html'" src="https://i.ibb.co/RzDqBPB/logo.png" alt="" >
+  <img onclick="location.href='index.html'" src="https://tse3.mm.bing.net/th?id=OIP.RFE-oMPOrQU03jmMtZYQUAHaD5&pid=Api&P=0&w=300&h=300" alt="" >
 </div>
-
 <div id="headermiddle">
 <div id="searchbar">
-  <input type="text" placeholder="SEARCH BRAND/PRODUCT" id="inputdata" >
-  <ion-icon name="search"></ion-icon>
-</div>
-<div>
+  <input type="text" oninput="debounce()" placeholder="SEARCH BRAND/PRODUCT" id="inputdata" >
+  <div id="productOptions"></div>
+  <ion-icon onclick="searchableData()" name="search"></ion-icon>
+</div>   
+<div >
   <button>Natural Beauty</button>
   <button>Estee Lauder</button>
   <button>Shiseido</button>
@@ -72,10 +72,6 @@ function headerupper() {
     <div class="new-account"><a href="strawsignup.html">Create New Account.</a></div>
 
   </div>
-
-    
-
-
 
   </div>
   <div>
