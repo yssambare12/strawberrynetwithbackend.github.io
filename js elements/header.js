@@ -1,6 +1,6 @@
 function headerupper() {
   return `<div>
-  <img onclick="location.href='index.html'" src="https://tse3.mm.bing.net/th?id=OIP.RFE-oMPOrQU03jmMtZYQUAHaD5&pid=Api&P=0&w=300&h=300" alt="" >
+  <img onclick="location.href='index.html'" src="https://a.cdnsbn.com/images/common/2016CompanyLogo.png" alt="" >
 </div>
 <div id="headermiddle">
 <div id="searchbar">
@@ -9,10 +9,10 @@ function headerupper() {
   <ion-icon onclick="searchableData()" name="search"></ion-icon>
 </div>   
 <div >
-  <button>Natural Beauty</button>
-  <button>Estee Lauder</button>
-  <button>Shiseido</button>
-  <button>Double Serum</button>
+  <button class="ctop">Natural Beauty</button>
+  <button class="ctop">Estee Lauder</button>
+  <button class="ctop">Shiseido</button>
+  <button class="ctop">Double Serum</button>
 </div>    
 </div>
 <div id="headerend">
