@@ -50,9 +50,13 @@
   .mainslidercontainer{
     height: 500px;
   }
+  .mySlides{
+    border-radius: 5px;
+  }
   
   .mySlides > img{
     border: 1px solid gray;
+    border-radius:2px;
   }
   
   .promo-title-line {
@@ -204,12 +208,14 @@
       margin-bottom: -10px;
   }
    #header{
+     /* border:solid 5px black; */
+     margin-bottom:30px;
        height: 120px;
        margin-left: -8px;
        margin-top: -8px;
        display: grid;
        grid-template-columns: 25% 25% 25%;
-       grid-gap: 8%;
+       gap: 8%;
    }
   
   #header>div >img{
@@ -234,6 +240,7 @@
   color: #623381;
   border-radius: 5px;
   width: 100%;
+  display:flex;
   
   }
   #headermiddle> div >ion-icon{
