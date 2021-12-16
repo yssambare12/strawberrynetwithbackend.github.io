@@ -252,3 +252,21 @@ margin: 15px 10%;
 }
 
 /* LOGIN PART CSS */
+#productOptions{
+  display: none;
+  position :absolute;
+  max-height: 60px;
+  max-width: 30%;
+  background-color: white;
+  overflow: scroll;
+}
+#productOptions >p {
+  color: black;
+  line-height: 15px;
+}
+#productOptions >p:hover {
+  background-color: lightcyan;
+}
+#productOptions::-webkit-scrollbar {
+  display: none;
+}

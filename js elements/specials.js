@@ -199,4 +199,69 @@ function showprod3(d){
 
 
 
+// Debouncing
+let timerId;
+let timerId2;
+function debounce(){
+  let product_name=document.getElementById("inputdata").value;
+if(product_name.length>2){
+  if(timerId){
+  clearTimeout(timerId);
+  }
+   timerId=setTimeout( async function(){
+     await productOptions();
+  },2000);
+}else{
+  document.getElementById("productOptions").style.display="none";
+}
+
+}
+async function productOptions(){
+    try{
+  var allProducts=await searchProduct();
+
+  document.getElementById("productOptions").innerHTML=null;
+  console.log(allProducts.length,document.getElementById("inputdata").value);
+
+    allProducts.forEach(function (oneProduct){
+      let name=document.createElement("p");
+       name.innerText=oneProduct.title;
+      let title=oneProduct.title;
+      title=title.split(" ");
+      if(title.includes(document.getElementById("inputdata").value)){
+      document.getElementById("productOptions").append(name)
+      name.onclick=function(){
+        showprod(oneProduct)
+        window.location.href = "newarr.html"
+        
+       }
+       document.getElementById("productOptions").style.display="block"; 
+      }
+    });
+    if(timerId2!=null){
+      clearTimeout(timerId2);
+      }
+       timerId2=setTimeout(  function(){
+          displaynone();
+      },9000);
+    }catch(e){
+      console.log( e);
+    }
+}
+function displaynone(){
+  document.getElementById("productOptions").style.display="none";
+}
+async function searchProduct(){ 
+ try{ querry=document.getElementById("inputdata").value;
+ let res=await fetch(`http://localhost:4000/skincare`);
+ let data=await res.json();
+ return data.skincareproducts;
+}catch(e){
+  console.log( e);
+}
+}
+async function searchableData(){
+let data=await searchProduct();
+searchableData(data)
+}
 //https://serpapi.com/search.json?engine=google&q=latest+beauty+products&google_domain=google.com&gl=us&hl=en&tbm=shop&start=35&num=35&api_key=
