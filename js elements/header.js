@@ -3,17 +3,21 @@ function headerupper() {
   <img onclick="location.href='index.html'" src="https://a.cdnsbn.com/images/common/2016CompanyLogo.png" alt="" >
 </div>
 <div id="headermiddle">
-<div id="searchbar">
+  <div id="searchbar">
   <input type="text" placeholder="SEARCH BRAND/PRODUCT" id="inputdata" >
   <div id="productOptions"></div>
   <ion-icon name="search" id="searchableData"></ion-icon>
-</div>   
-<div >
+  
+  </div>   
+
+  <div>
   <button class="ctop">Natural Beauty</button>
   <button class="ctop">Estee Lauder</button>
   <button class="ctop">Shiseido</button>
   <button class="ctop">Double Serum</button>
-</div>    
+  
+  <div id="onlineSearch"></div>
+  </div>    
 </div>
 <div id="headerend">
   <div>

@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="https://media.glassdoor.com/sqll/2397264/strawberrynet-squarelogo-1561462036150.png"
+    />
   </head>
 
   <body>
@@ -66,7 +71,6 @@
               style="width: 100%"
             />
           </div>
-/*Hello*/
           <div class="mySlides fade">
             <img
               src="https://a.cdnsbn.com/images/English/banner_HolidayGiftSetsOct21_1170_1.jpg"
@@ -311,11 +315,11 @@
       showdatainpage.style.marginLeft = "2%";
       items.forEach((d) => {
         let div = document.createElement("div");
-        div.style.width = "250px"
+        div.style.width = "250px";
         let img = document.createElement("img");
         img.src = d.thumbnail;
         img.style.width = "200px";
-        img.style.marginLeft = "25px"
+        img.style.marginLeft = "25px";
         img.style.height = "250px";
         let name = document.createElement("p");
         name.style.color = "blue";
@@ -330,6 +334,65 @@
         div.append(img, name, price, addtocartbtn);
         showdatainpage.append(div);
       });
+    }
+
+    // --------------------------------drop down effect for search tab-----------------------------
+
+    let onlineSearch = document.getElementById("onlineSearch");
+
+    // onlineSearch.addEventListener("click");
+    let searchinpdata = document.getElementById("inputdata");
+    var sets;
+    searchinpdata.addEventListener("input", startsearchingfordata);
+
+    function startsearchingfordata(e) {
+      onlineSearch.textContent = e.target.value;
+      var inpt = searchinpdata.value;
+
+      debounce(startshowofsug, 3000);
+      function debounce(startshowofsug, time) {
+        if (sets) {
+          clearTimeout(sets);
+        }
+        sets = setTimeout(() => {
+          startshowofsug(inpt);
+        }, time);
+      }
+
+      if (inpt != " ") {
+        let searchR = document.getElementById("onlineSearch");
+        searchR.style.display = "block";
+        searchR.style.backgroundColor = "white"
+        let out = searchinpdata.value;
+        console.log(out);
+      }
+      if (inpt == "") {
+        let searchR = document.getElementById("onlineSearch");
+        searchR.style.display = "none";
+      }
+    }
+
+    async function startshowofsug(data) {
+      onlineSearch.textContent = null;
+      let res = await fetch(
+        `https://serpapi.com/search.json?engine=google&q=${data}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`
+      );
+
+      let respdata = await res.json();
+
+      let newdata = respdata.shopping_results
+      console.log(respdata.shopping_results)
+      newdata.forEach(function(d){
+        //newcont.innerHTML = null
+        let p = document.createElement('p')
+        p.innerText = d.title
+        // p.onclick = function(){
+        //     console.log(d)
+        //     showmoreinfo(d.thumbnail, d.title, d.price, d.reviews)
+        // }
+        onlineSearch.append(p)
+    })
+
     }
   </script>
   <script
