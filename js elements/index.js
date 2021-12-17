@@ -215,6 +215,7 @@ function showProducts() {
     addtocart_btn.innerText = "Add to Bag";
 
     addtocart_btn.onclick = function () {
+      Swal.fire("Good job!", "Added product to Cart Successfully", "success");
       addtoCart(product);
       showalert(product);
     };
@@ -232,7 +233,7 @@ if (localStorage.getItem("cart") === null) {
 let sum = 0;
 var counter = 0;
 function addtoCart(p) {
-  console.log(p)
+  console.log(p);
   let kohl_cart = JSON.parse(localStorage.getItem("cart"));
   kohl_cart.push(p);
   localStorage.setItem("cart", JSON.stringify(kohl_cart));
@@ -674,6 +675,7 @@ function show61(d) {
     addtocartbtn.backgroundColor = "white";
     addtocartbtn.style.marginLeft = "2%";
     addtocartbtn.onclick = function () {
+      Swal.fire("Good job!", "Added product to Cart Successfully", "success");
       addtocart(prod);
       showalert(prod);
     };

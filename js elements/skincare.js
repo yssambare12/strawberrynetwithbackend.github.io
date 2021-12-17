@@ -43,6 +43,10 @@ function showdata(products){
         }
         let button2 = document.createElement("button")
         button2.textContent = "Add to bag"
+        button2.onclick = function (){
+            
+            Swal.fire("Good job!", "Added product to Cart Successfully", "success");
+        }
         button2.style.backgroundColor = "#00A69C"
         button2.style.color = "white"
         button2.style.marginLeft = "50px"
@@ -130,6 +134,10 @@ function showdatainlist(products){
         div3.append(cost)
         let tobag = document.createElement('button')
         tobag.innerText = "Add to Bag"
+        tobag.onclick = function (){
+            
+            Swal.fire("Good job!", "Added product to Cart Successfully", "success");
+        }
         tobag.style.backgroundColor = "#00A69C"
         tobag.style.marginLeft = "30px"
         tobag.style.height = "30px"
