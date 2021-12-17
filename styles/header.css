@@ -133,6 +133,7 @@ height:40px;
    color:rgba(0,0,0,0.5);
    font-size:13px;
    
+   
  }
 
 
@@ -298,3 +299,7 @@ margin: 15px 10%;
   display: none;
 }
 
+.ctop{
+  background: transparent;
+  border:none;
+}
