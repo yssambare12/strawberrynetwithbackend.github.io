@@ -24,7 +24,7 @@ function changeori(){
 //da32f09f6311aca662588aeda28758dfb5b2fec6feacf4d9c05d11876981ad1a
 //search?engine=google_product
 async function fetchd(){
-    let res = await fetch(`https://serpapi.com/search.json?engine=google&q=Beauty+products&google_domain=google.com&hl=en&tbm=shop&start=25&num=25&api_key=953d7eca211a134cd79c6e4fb3ae05b46cc51e56d88b59900029f16ce695f7d0`)
+    let res = await fetch(`https://serpapi.com/search.json?engine=google&q=Beauty+products&google_domain=google.com&hl=en&tbm=shop&start=25&num=25&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`)
     let data = await res.json()
     showprod(data.shopping_results)
     console.log(data)
@@ -84,7 +84,7 @@ function showprod(d){
 
 
 async function fetchd2(){
-    let res = await fetch(`https://serpapi.com/search.json?engine=google&q=beauty+scoop&google_domain=google.com&hl=en&tbm=shop&start=8&num=8&api_key=953d7eca211a134cd79c6e4fb3ae05b46cc51e56d88b59900029f16ce695f7d0`)
+    let res = await fetch(`https://serpapi.com/search.json?engine=google&q=beauty+scoop&google_domain=google.com&hl=en&tbm=shop&start=8&num=8&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`)
     let data = await res.json()
     showprod2(data.shopping_results)
     console.log(data)
@@ -139,7 +139,7 @@ function showprod2(d){
 }
 
 async function fetchd3(){
-    let res = await fetch(`https://serpapi.com/search.json?engine=google&q=make+up+gifts&google_domain=google.com&hl=en&tbm=shop&start=8&num=8&api_key=953d7eca211a134cd79c6e4fb3ae05b46cc51e56d88b59900029f16ce695f7d0`)
+    let res = await fetch(`https://serpapi.com/search.json?engine=google&q=make+up+gifts&google_domain=google.com&hl=en&tbm=shop&start=8&num=8&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`)
     let data = await res.json()
     showprod3(data.shopping_results)
     console.log(data)

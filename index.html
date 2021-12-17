@@ -298,7 +298,7 @@
     async function fetchData() {
       let itemneedned = searchdata.value;
       let res = await fetch(
-        `https://serpapi.com/search.json?engine=google&q=${itemneedned}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=da32f09f6311aca662588aeda28758dfb5b2fec6feacf4d9c05d11876981ad1a`
+        `https://serpapi.com/search.json?engine=google&q=${itemneedned}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`
       );
       let data = await res.json();
       console.log(data);
