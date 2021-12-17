@@ -362,13 +362,15 @@
       if (inpt != " ") {
         let searchR = document.getElementById("onlineSearch");
         searchR.style.display = "block";
-        searchR.style.backgroundColor = "white"
+        searchR.style.backgroundColor = "white";
         let out = searchinpdata.value;
         console.log(out);
       }
       if (inpt == "") {
         let searchR = document.getElementById("onlineSearch");
         searchR.style.display = "none";
+        let showdatainpage = document.getElementById("newresults");
+        showdatainpage.innerHTML = null;
       }
     }
 
@@ -380,19 +382,42 @@
 
       let respdata = await res.json();
 
-      let newdata = respdata.shopping_results
-      console.log(respdata.shopping_results)
-      newdata.forEach(function(d){
-        //newcont.innerHTML = null
-        let p = document.createElement('p')
-        p.innerText = d.title
-        // p.onclick = function(){
-        //     console.log(d)
-        //     showmoreinfo(d.thumbnail, d.title, d.price, d.reviews)
-        // }
-        onlineSearch.append(p)
-    })
+      let newdata = respdata.shopping_results;
+      console.log(respdata.shopping_results);
+      newdata.forEach(function (d) {
+        let p = document.createElement("p");
+        p.innerText = d.title;
+        p.onclick = function () {
+          console.log(d);
+          showMoreInfo(d);
+        };
+        onlineSearch.append(p);
+      });
+    }
 
+    function showMoreInfo(d) {
+      let showdatainpage = document.getElementById("newresults");
+      showdatainpage.style.marginLeft = "20%";
+
+      let div = document.createElement("div");
+      div.style.width = "250px";
+      let img = document.createElement("img");
+      img.src = d.thumbnail;
+      img.style.width = "200px";
+      img.style.marginLeft = "25px";
+      img.style.height = "250px";
+      let name = document.createElement("p");
+      name.style.color = "blue";
+      name.style.marginLeft = "3%";
+      name.innerText = d.title;
+      let price = document.createElement("p");
+      price.innerText = d.price;
+      let addtocartbtn = document.createElement("button");
+      addtocartbtn.innerText = "Add to cart";
+      addtocartbtn.backgroundColor = "white";
+      addtocartbtn.style.marginLeft = "3%";
+      div.append(img, name, price, addtocartbtn);
+      showdatainpage.append(div);
     }
   </script>
   <script

@@ -258,6 +258,89 @@ color: #623381; font-weight: bold;
 
 
 
+    // --------------------------------drop down effect for search tab-----------------------------
+
+    let onlineSearch = document.getElementById("onlineSearch");
+
+    // onlineSearch.addEventListener("click");
+    let searchinpdata = document.getElementById("inputdata");
+    var sets;
+    searchinpdata.addEventListener("input", startsearchingfordata);
+
+    function startsearchingfordata(e) {
+      onlineSearch.textContent = e.target.value;
+      var inpt = searchinpdata.value;
+
+      debounce(startshowofsug, 3000);
+      function debounce(startshowofsug, time) {
+        if (sets) {
+          clearTimeout(sets);
+        }
+        sets = setTimeout(() => {
+          startshowofsug(inpt);
+        }, time);
+      }
+
+      if (inpt != " ") {
+        let searchR = document.getElementById("onlineSearch");
+        searchR.style.display = "block";
+        searchR.style.backgroundColor = "white";
+        let out = searchinpdata.value;
+        console.log(out);
+      }
+      if (inpt == "") {
+        let searchR = document.getElementById("onlineSearch");
+        searchR.style.display = "none";
+        let showdatainpage = document.getElementById("newresults");
+        showdatainpage.innerHTML = null;
+      }
+    }
+
+    async function startshowofsug(data) {
+      onlineSearch.textContent = null;
+      let res = await fetch(
+        `https://serpapi.com/search.json?engine=google&q=${data}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`
+      );
+
+      let respdata = await res.json();
+
+      let newdata = respdata.shopping_results;
+      console.log(respdata.shopping_results);
+      newdata.forEach(function (d) {
+        let p = document.createElement("p");
+        p.innerText = d.title;
+        p.onclick = function () {
+          console.log(d);
+          showMoreInfo(d);
+        };
+        onlineSearch.append(p);
+      });
+    }
+
+    function showMoreInfo(d) {
+      let showdatainpage = document.getElementById("newresults");
+      showdatainpage.style.marginLeft = "20%";
+
+      let div = document.createElement("div");
+      div.style.width = "250px";
+      let img = document.createElement("img");
+      img.src = d.thumbnail;
+      img.style.width = "200px";
+      img.style.marginLeft = "25px";
+      img.style.height = "250px";
+      let name = document.createElement("p");
+      name.style.color = "blue";
+      name.style.marginLeft = "3%";
+      name.innerText = d.title;
+      let price = document.createElement("p");
+      price.innerText = d.price;
+      let addtocartbtn = document.createElement("button");
+      addtocartbtn.innerText = "Add to cart";
+      addtocartbtn.backgroundColor = "white";
+      addtocartbtn.style.marginLeft = "3%";
+      div.append(img, name, price, addtocartbtn);
+      showdatainpage.append(div);
+    }
 
 
 
