@@ -4,9 +4,9 @@ function headerupper() {
 </div>
 <div id="headermiddle">
 <div id="searchbar">
-  <input type="text" oninput="debounce()" placeholder="SEARCH BRAND/PRODUCT" id="inputdata" >
+  <input type="text" placeholder="SEARCH BRAND/PRODUCT" id="inputdata" >
   <div id="productOptions"></div>
-  <ion-icon onclick="searchableData()" name="search"></ion-icon>
+  <ion-icon name="search" id="searchableData"></ion-icon>
 </div>   
 <div >
   <button class="ctop">Natural Beauty</button>
