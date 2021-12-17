@@ -3,8 +3,9 @@ function headerupper() {
   <img onclick="location.href='index.html'" src="https://a.cdnsbn.com/images/common/2016CompanyLogo.png" alt="" >
 </div>
 <div id="headermiddle">
-  <div id="searchbar">
-  <input type="text" placeholder="SEARCH BRAND/PRODUCT" id="inputdata" >
+
+<div id="searchbar">
+  <input type="text" oninput="debounce()" placeholder="SEARCH BRAND/PRODUCT" id="inputdata" >
   <div id="productOptions"></div>
   <ion-icon name="search" id="searchableData"></ion-icon>
   

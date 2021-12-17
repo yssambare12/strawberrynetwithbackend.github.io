@@ -266,7 +266,7 @@ function displaynone(){
 }
 async function searchProduct(){ 
  try{ querry=document.getElementById("inputdata").value;
- let res=await fetch(`http://localhost:4000/skincare`);
+ let res=await fetch(`http://localhost:4000/mensskincare`);
  let data=await res.json();
  return data.skincareproducts;
 }catch(e){
