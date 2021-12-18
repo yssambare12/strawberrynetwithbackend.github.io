@@ -14,22 +14,18 @@
 #inp {
   font-size: 20px;
 }
-<<<<<<< HEAD
 #track,#queries>div>button,#select{
     background-color:#F06292;
     color: whitesmoke;
     font-size: 20px;
+}
 
-=======
-#track,
-#queries > div > button {
+#track,#queries > div > button {
   background-color: #f06292;
   color: whitesmoke;
   font-size: 20px;
->>>>>>> c70f9840f5856fe8ab842ad7853c03f7bc939788
 }
-#track:hover,
-#queries > div > button:hover {
+#track:hover,#queries > div > button:hover {
   background-color: #d81b60;
 }
 
@@ -49,7 +45,6 @@
   background-color: white;
 }
 
-<<<<<<< HEAD
 #header{
     margin-bottom:30px;
     }
@@ -72,8 +67,6 @@
   border-radius: 10px;
 }
 
-=======
 #header {
   margin-bottom: 30px;
 }
->>>>>>> c70f9840f5856fe8ab842ad7853c03f7bc939788
