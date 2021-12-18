@@ -90,112 +90,109 @@ let data = [
   
     {
       id: "1005",
-      title: "American Crew Men Power Cleanser Style Remover Daily Shampoo",
-      price: 15.99,
-      thumbnail: "https://a.cdnsbn.com/images/products/250/16606199944.jpg",
-    },
-  
-    {
-      id: "1005",
-      title: "Christian Dior Eyeliner Waterproof 1.2g/0.04oz",
-      price: 36.99,
-      thumbnail: "https://a.cdnsbn.com/images/products/250/04593280102.jpg",
-    },
-  
-    {
-      id: "1005",
-      title:
-        "Clinique True Bronze Pressed Powder Bronzer - No. 02 Sunkissed 9.6g/0.33oz",
-      price: 24.98,
-      thumbnail: "https://a.cdnsbn.com/images/products/250/04774080402.jpg",
-    },
-  
-    {
-      id: "1005",
-      title: "Lancaster Summer Splash Eau De Toilette Spray 100ml/3.4oz",
-      price: 25.99,
-      thumbnail: "https://b.cdnsbn.com/images/products/250/15942383706.jpg",
-    },
-  
-    {
-      id: "1005",
-      title: "NARS Velvet Matte Lip Pencil - Train Bleu 2.4g/0.08oz",
-      price: 10.99,
-      thumbnail: "https://b.cdnsbn.com/images/products/250/18520102602.jpg",
-    },
-  
-    {
-      id: "1005",
-      title:
-        "Valentino Valentina Acqua Floreale Eau De Toilette Spray 50ml/1.7oz",
-      price: 59.99,
-      thumbnail: "https://b.cdnsbn.com/images/products/250/15716565606.jpg",
-    },
-  
-    {
-      id: "1005",
-      title:
-        "Yves Saint Laurent Rouge Pur Couture Vernis A Levres Pop Water Glossy Stain 6ml/0.2oz",
-      price: 31.99,
-      thumbnail: "https://b.cdnsbn.com/images/products/250/18763681702.jpg",
-    },
-
-  // DAILY SPECIALS
- //changing
-     {
-       id: "1005",
-       title: "Men's Ultra Soft Fleece Hoodie",
-       price: 175.99,
-       thumbnail: "https://b.cdnsbn.com/images/products/250/23542481401.jpg",
-     },
-      
-    {
-      id: "1005",
-      title: "Moisture Repair Shampoo (For Weakened and Damaged Hair) 1000ml/33.8oz",
-      price: 267.50,
-      thumbnail: "https://a.cdnsbn.com/images/products/250/17653399444.jpg",
-    },
-  
-    {
-      id: "1005",
-      title: "Powermatte Lip Pigment - # Call Me (Coral) 5.5ml/0.18oz",
-      price: 1409.50,
-      thumbnail: "https://b.cdnsbn.com/images/products/250/25379702602.jpg",
-    },
-  
-    {
-      id: "1005",
       title: "Dolce & Gabbana Pour Femme Eau De Parfum Spray 50ml/1.6oz",
-      price: 375.99,
+      price: 378.50,
       thumbnail: "https://a.cdnsbn.com/images/products/250/14877939506.jpg",
     },
   
     {
       id: "1005",
       title: "Estee Lauder New Dimension Firm + Fill Eye System 10ml/0.34oz",
-      price: 563.50,
+      price: 339.10,
       thumbnail: "https://a.cdnsbn.com/images/products/250/20143580601.jpg",
     },
   
     {
       id: "1005",
-      title: "Shiseido Ultimune Power Infusing Concentrate - ImuGeneration Technology 30ml/1oz",
-      price: 450.00,
-      thumbnail: "https://b.cdnsbn.com/images/products/250/22495081401.jpg",
+      title: "Ipsa Cleansing Gel Ex 150g/5oz",
+      price: 283.90,
+      thumbnail: "https://a.cdnsbn.com/images/products/250/14642226801.jpg",
     },
   
     {
       id: "1005",
-      title: "Kerastase Elixir Ultime Le Masque Sublimating Oil Infused Masque (Dull Hair) 200ml/6.8oz",
-      price: 446.50,
+      title: "Elixir Ultime Le Masque Sublimating Oil Infused Masque (Dull Hair) 200ml/6.8oz",
+      price: 441.99,
       thumbnail: "https://b.cdnsbn.com/images/products/250/23431000444.jpg",
     },
   
     {
       id: "1005",
-      title: "La Roche Posay Lipikar Surgras Concentrated Shower-Cream 200ml/6.7oz",
-      price: 560.99,
+      title: "La Roche Posayv Lipikar Surgras Concentrated Shower-Cream 200ml/6.7oz",
+      price: 118.50,
       thumbnail: "https://b.cdnsbn.com/images/products/250/14772408103.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Full Of Promise Treatment Duo For Uplifting Days & Voluminizing Nights 30ml/1oz",
+      price: 390.50,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/16277691101.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Ultimune Power Infusing Concentrate - ImuGeneration Technology 30ml/1oz",
+      price: 31.99,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/22495081401.jpg",
+    },
+
+  // DAILY SPECIALS
+ //changing
+     {
+       id: "1005",
+       title: "Burberry London Eau De Toilette Spray 100ml/3.4oz",
+       price: 354.85,
+       thumbnail: "https://a.cdnsbn.com/images/products/250/05527536005.jpg",
+     },
+      
+    {
+      id: "1005",
+      title: "Bvlgari Petits Et Mamans Eau De Toilette Spray 100ml/3.3oz",
+      price: 433.70,
+      thumbnail: "https://a.cdnsbn.com/images/products/250/02144435006.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Christian Dior Eau Sauvage Deodorant Stick (Alcohol Free) 75g/2.5oz",
+      price: 229.50,
+      thumbnail: "https://a.cdnsbn.com/images/products/250/06716480103.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Scarlet Poppy Cologne Intense Spray (Originally Without Box) 100ml/3.4oz",
+      price: 1537.50,
+      thumbnail: "https://a.cdnsbn.com/images/products/250/26178189506.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Loewe 001 Man Eau De Parfum Spray 100ml/3.3oz",
+      price: 562.50,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/25040937905.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Serge Lutens Les Eaux De Politesse L'Eau D'Armoise Eau De Parfum Spray 100ml/3.3oz",
+      price: 750.50,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/23871389106.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Tiffany & Co. Intense Eau De Parfum Spray 50ml/1.7oz",
+      price: 780.50,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/23133033606.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Versace Bright Crystal Eau De Toilette Spray 90ml/3oz",
+      price: 544.99,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/05505286606.jpg",
     },
 ];
 let parent = document.getElementById("products");
