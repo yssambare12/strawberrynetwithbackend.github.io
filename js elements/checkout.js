@@ -289,13 +289,13 @@ function rock(par) {
   makepay.addEventListener("click", startpay);
   function startpay() {
     if (
-      fname.value == "" &&
-      lname.value == "" &&
-      compname.value == "" &&
-      add.value == "" &&
-      city.value == "" &&
-      state.value == "" &&
-      zip.value == "" &&
+      fname.value == "" ||
+      lname.value == "" ||
+      compname.value == "" ||
+      add.value == "" ||
+      city.value == "" ||
+      state.value == "" ||
+      zip.value == "" ||
       mobile.value == ""
     ) {
       alert("Incomplete shipping information");
