@@ -44,7 +44,7 @@ function headerupper() {
 
   
 
-    <button onclick="location.href='localhost:3000'"><ion-icon name="person-circle-outline"></ion-icon><b>Sign in</b></button>
+    <button onclick="location.href='http://localhost:3000/'"><ion-icon name="person-circle-outline"></ion-icon><b>Sign in</b></button>
     <button><ion-icon name="heart-circle-outline"></ion-icon><b>Whishlist</b></button>
     <button onclick="location.href='bag.html'"><ion-icon name="bag"></ion-icon><b>Bag</b></button>
 
