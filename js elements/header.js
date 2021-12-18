@@ -1,6 +1,6 @@
 function headerupper() {
   return `<div>
-  <img onclick="location.href='index.html'" src="https://a.cdnsbn.com/images/common/2016CompanyLogo.png" alt="" >
+  <img onclick="location.href='index.html'" src="https://i.ibb.co/XLzPz3W/logog.png" alt="" >
 </div>
 <div id="headermiddle">
   <div id="searchbar">
