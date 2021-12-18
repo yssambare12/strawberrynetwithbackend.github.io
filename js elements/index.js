@@ -27,174 +27,176 @@ function showSlides() {
 // product for front pages
 
 let data = [
-  {
-    id: "1001",
-    title: "Bottega Veneta Eau De Parfum Spray 75ml/2.5oz",
-    price: 1050.59,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/13101119406.jpg",
-  },
-  {
-    id: "1002",
-    title: "Elizabeth Arden Ceramide Vitamin C Capsules - Radiance Renewal Serum 90caps",
-    price: 626.90,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/26636580501.jpg",
-  },
-  {
-    id: "1003",
-    title: "Jo Malone Blackberry & Bay Body Creme 175ml/5.9ozodie[yellow]",
-    price: 725.45,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/21776389503.jpg",
-  },
-  {
-    id: "1004",
-    title: "Moroccanoil Moisture Repair Shampoo (For Weakened and Damaged Hair) 1000ml/33.8oz",
-    price: 544.10,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/17653399444.jpg",
-  },
-  {
-    id: "1005",
-    title: "NARS Powermatte Lip Pigment - # Call Me (Coral) 5.5ml/0.18oz",
-    price: 141.95,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/25379702602.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "Olaplex No. 3 Hair Perfector 100ml/3.3oz",
-    price: 228.79,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/25401885944.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "Shu Uemura Eyelash Curler",
-    price: 141.95,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/05570877709.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "Skin Ceuticals H.A Intensifier - Hyaluronic Acid Intensifier 30ml/1oz",
-    price: 175.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/21144796301.jpg",
-  },
-  // 11.11 BUDGET ZONE
-  {
-    id: "1005",
-    title: "Aesop",
-    price: 78.99,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/10255804401.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "American Crew Men Power Cleanser Style Remover Daily Shampoo",
-    price: 15.99,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/16606199944.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "Christian Dior Eyeliner Waterproof 1.2g/0.04oz",
-    price: 36.99,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/04593280102.jpg",
-  },
-
-  {
-    id: "1005",
-    title:
-      "Clinique True Bronze Pressed Powder Bronzer - No. 02 Sunkissed 9.6g/0.33oz",
-    price: 24.98,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/04774080402.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "Lancaster Summer Splash Eau De Toilette Spray 100ml/3.4oz",
-    price: 25.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/15942383706.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "NARS Velvet Matte Lip Pencil - Train Bleu 2.4g/0.08oz",
-    price: 10.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/18520102602.jpg",
-  },
-
-  {
-    id: "1005",
-    title:
-      "Valentino Valentina Acqua Floreale Eau De Toilette Spray 50ml/1.7oz",
-    price: 59.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/15716565606.jpg",
-  },
-
-  {
-    id: "1005",
-    title:
-      "Yves Saint Laurent Rouge Pur Couture Vernis A Levres Pop Water Glossy Stain 6ml/0.2oz",
-    price: 31.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/18763681702.jpg",
-  },
+    {
+      id: "1001",
+      title:"Bottega Veneta Eau De Parfum Spray 75ml/2.5oz",
+      price: 1050.59,
+      thumbnail: "https://a.cdnsbn.com/images/products/250/13101119406.jpg",
+    },
+    {
+      id: "1002",
+      title:"Elizabeth Arden Ceramide Vitamin C Capsules - Radiance Renewal Serum 90caps",
+      price: 626.90,
+      thumbnail: "https://a.cdnsbn.com/images/products/250/26636580501.jpg",
+    },
+    {
+      id: "1003",
+      title:"Jo Malone Blackberry & Bay Body Creme 175ml/5.9ozodie[yellow]",
+      price: 725.45,
+      thumbnail:  "https://a.cdnsbn.com/images/products/250/21776389503.jpg",
+    },
+    {
+      id: "1004",
+      title:"Moroccanoil Moisture Repair Shampoo (For Weakened and Damaged Hair) 1000ml/33.8oz",
+      price: 544.10,
+      thumbnail:  "https://a.cdnsbn.com/images/products/250/17653399444.jpg",
+    },
+    {
+      id: "1005",
+      title:  "NARS Powermatte Lip Pigment - # Call Me (Coral) 5.5ml/0.18oz",
+      price: 141.95,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/25379702602.jpg",
+    },
+  
+    {
+      id: "1005",
+      title:  "Olaplex No. 3 Hair Perfector 100ml/3.3oz",
+      price: 228.79,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/25401885944.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: 
+      "Shu Uemura Eyelash Curler",
+      price: 141.95,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/05570877709.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: 
+      "Skin Ceuticals H.A Intensifier - Hyaluronic Acid Intensifier 30ml/1oz",
+      price: 175.99,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/21144796301.jpg",
+    },
+    // 11.11 BUDGET ZONE
+    {
+      id: "1005",
+      title: "Clean Reserve Velvet Flora Eau De Parfum Spray 100ml/3.4oz",
+      price: 386.99,
+      thumbnail: "https://a.cdnsbn.com/images/products/250/22186199906.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "American Crew Men Power Cleanser Style Remover Daily Shampoo",
+      price: 15.99,
+      thumbnail: "https://a.cdnsbn.com/images/products/250/16606199944.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Christian Dior Eyeliner Waterproof 1.2g/0.04oz",
+      price: 36.99,
+      thumbnail: "https://a.cdnsbn.com/images/products/250/04593280102.jpg",
+    },
+  
+    {
+      id: "1005",
+      title:
+        "Clinique True Bronze Pressed Powder Bronzer - No. 02 Sunkissed 9.6g/0.33oz",
+      price: 24.98,
+      thumbnail: "https://a.cdnsbn.com/images/products/250/04774080402.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Lancaster Summer Splash Eau De Toilette Spray 100ml/3.4oz",
+      price: 25.99,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/15942383706.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "NARS Velvet Matte Lip Pencil - Train Bleu 2.4g/0.08oz",
+      price: 10.99,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/18520102602.jpg",
+    },
+  
+    {
+      id: "1005",
+      title:
+        "Valentino Valentina Acqua Floreale Eau De Toilette Spray 50ml/1.7oz",
+      price: 59.99,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/15716565606.jpg",
+    },
+  
+    {
+      id: "1005",
+      title:
+        "Yves Saint Laurent Rouge Pur Couture Vernis A Levres Pop Water Glossy Stain 6ml/0.2oz",
+      price: 31.99,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/18763681702.jpg",
+    },
 
   // DAILY SPECIALS
  //changing
- {
-   id: "1005",
-   title: "Men's Ultra Soft Fleece Hoodie",
-   price: 175.99,
-   thumbnail: "https://b.cdnsbn.com/images/products/250/23542481401.jpg",
- },
-
-  {
-    id: "1005",
-    title: "Moisture Repair Shampoo (For Weakened and Damaged Hair) 1000ml/33.8oz",
-    price: 267.50,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/17653399444.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "Powermatte Lip Pigment - # Call Me (Coral) 5.5ml/0.18oz",
-    price: 1409.50,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/25379702602.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "Dolce & Gabbana Pour Femme Eau De Parfum Spray 50ml/1.6oz",
-    price: 375.99,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/14877939506.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "Estee Lauder New Dimension Firm + Fill Eye System 10ml/0.34oz",
-    price: 563.50,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/20143580601.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "Shiseido Ultimune Power Infusing Concentrate - ImuGeneration Technology 30ml/1oz",
-    price: 450.00,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/22495081401.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "Kerastase Elixir Ultime Le Masque Sublimating Oil Infused Masque (Dull Hair) 200ml/6.8oz",
-    price: 446.50,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/23431000444.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "La Roche Posay Lipikar Surgras Concentrated Shower-Cream 200ml/6.7oz",
-    price: 560.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/14772408103.jpg",
-  },
+     {
+       id: "1005",
+       title: "Men's Ultra Soft Fleece Hoodie",
+       price: 175.99,
+       thumbnail: "https://b.cdnsbn.com/images/products/250/23542481401.jpg",
+     },
+      
+    {
+      id: "1005",
+      title: "Moisture Repair Shampoo (For Weakened and Damaged Hair) 1000ml/33.8oz",
+      price: 267.50,
+      thumbnail: "https://a.cdnsbn.com/images/products/250/17653399444.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Powermatte Lip Pigment - # Call Me (Coral) 5.5ml/0.18oz",
+      price: 1409.50,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/25379702602.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Dolce & Gabbana Pour Femme Eau De Parfum Spray 50ml/1.6oz",
+      price: 375.99,
+      thumbnail: "https://a.cdnsbn.com/images/products/250/14877939506.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Estee Lauder New Dimension Firm + Fill Eye System 10ml/0.34oz",
+      price: 563.50,
+      thumbnail: "https://a.cdnsbn.com/images/products/250/20143580601.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Shiseido Ultimune Power Infusing Concentrate - ImuGeneration Technology 30ml/1oz",
+      price: 450.00,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/22495081401.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "Kerastase Elixir Ultime Le Masque Sublimating Oil Infused Masque (Dull Hair) 200ml/6.8oz",
+      price: 446.50,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/23431000444.jpg",
+    },
+  
+    {
+      id: "1005",
+      title: "La Roche Posay Lipikar Surgras Concentrated Shower-Cream 200ml/6.7oz",
+      price: 560.99,
+      thumbnail: "https://b.cdnsbn.com/images/products/250/14772408103.jpg",
+    },
 ];
 let parent = document.getElementById("products");
 function showProducts() {
