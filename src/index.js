@@ -20,7 +20,8 @@ app.use("/menscologne", menscologneController)
 const cartController = require("./controllers/cartpage.controller")
 app.use("/cart", cartController)
 
-
+const trackController = require("./controllers/trackorder.controller")
+app.use("/track", trackController)
 
 const userdataController = require("./controllers/userdata.controller")
 app.use("/user", userdataController)

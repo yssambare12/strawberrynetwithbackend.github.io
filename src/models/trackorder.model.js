@@ -1,12 +1,15 @@
 const {Schema,model} = require("mongoose")
 
+const mongoose = require("mongoose")
+
 const trackproductSchema = new Schema({
-    
-        product_id:[{ 
+
+     name:{ type: String,required: true},
+        product_id:{ 
             type:mongoose.Schema.Types.ObjectId,
-            ref:"cartpage",
+            ref:"cart",
             required: true
-        }]
+        }
     
 },{
     versionKey:false,

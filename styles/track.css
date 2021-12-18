@@ -7,7 +7,7 @@
 #h3,#order,#but ,#inp{
     font-size: 20px;
 }
-#track,#queries>div>button{
+#track,#queries>div>button,#select{
     background-color:#F06292;
     color: whitesmoke;
     font-size: 20px;
@@ -38,3 +38,22 @@
 #header{
     margin-bottom:30px;
     }
+
+#products{
+    border:1px;
+    width:70%;
+    margin: auto;
+    margin-top:50px;
+
+}
+
+#products>div>button{
+    border: 0;
+  background: steelblue;
+  color: white;
+  font-weight: bold;
+  transition: background .3s linear;
+  letter-spacing: 2px;
+  border-radius: 10px;
+}
+
