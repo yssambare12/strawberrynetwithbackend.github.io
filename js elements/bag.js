@@ -18,7 +18,7 @@ async function getdata() {
 getdata();
 var par;
 function rock(par) {
-  if (par == null) {
+  if (par.length == 0) {
     cont112.innerHTML = null;
   } else {
     let cont112 = document.getElementById("cont112");
@@ -45,21 +45,31 @@ function rock(par) {
       imgs.style.height = "150px";
       let title = document.createElement("p");
       title.innerText = p.title;
-      title.style.width = "60%";
+      title.style.width = "45%";
       let price = document.createElement("p");
       price.innerText = p.price;
+      price.style.marginRight = "4%";
       price.style.textAlign = "end";
       div.style.flexBasis = "auto";
+      let btnToReomve = document.createElement("button");
+      btnToReomve.innerText = "Remove from Bag";
+      btnToReomve.style.height = "35px";
+      btnToReomve.style.border = "none";
+      btnToReomve.style.color = "white";
+      btnToReomve.style.backgroundColor = "rgb(126, 87, 194)";
+      btnToReomve.onclick = function () {
+        removeItemFromBag(p._id);
+      };
       let hr = document.createElement("hr");
       hr.style.marginTop = "-20px";
       hr.style.width = "94%";
       hr.style.margin = "auto";
-      div.append(imgs, title, price);
+      div.append(imgs, title, price, btnToReomve);
       cont112.append(div, hr);
     });
   }
   var total = 0;
-  if (par == null) {
+  if (par.length == 0) {
     cont112.innerHTML = null;
   } else {
     cont112.style.display = "grid";
@@ -92,7 +102,7 @@ function rock(par) {
     div.append(h4, h41, h42, h43, h44);
     cont112.append(div);
   }
-  if (par == null) {
+  if (par.length == 0) {
     cont112.innerHTML = null;
   } else {
     cont112.style.display = "grid";
@@ -228,6 +238,37 @@ function rock(par) {
     cont112.append(div);
   }
 }
+
+function removeItemFromBag(p) {
+  fetch(`http://localhost:4000/cart/${p}`, {
+    method: "DELETE",
+    headers: { "Content-type": "application/json; charset=UTF-8" },
+  })
+    .then((res) => {
+      Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+          )
+        }
+      })
+      getdata();
+    })
+    .catch((e) => {
+      alert("something went wrong");
+    });
+}
+
 let cont61 = document.getElementById("cont61");
 cont61.style.width = "95%";
 let cont611data = [

@@ -18,4 +18,12 @@ router.post("/", async (req, res) => {
     return res.status(500).json({ message: e.message, Status: "Failed" });
   }
 });
+router.delete("/:id", async (req, res) => {
+  try {
+    const cartitem = await Cart.findByIdAndDelete(req.params.id);
+    return res.status(200).json({ cartitem });
+  } catch (e) {
+    return res.status(500).json({ message: e.message, Status: "Failed" });
+  }
+});
 module.exports = router;

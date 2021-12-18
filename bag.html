@@ -1,132 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Straberrynet bag</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/bag.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="shortcut icon" type="image/jpg"
-        href="https://media.glassdoor.com/sqll/2397264/strawberrynet-squarelogo-1561462036150.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/bag.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="https://media.glassdoor.com/sqll/2397264/strawberrynet-squarelogo-1561462036150.png"
+    />
     <style>
-       #headerend > div> button:nth-child(3) {
-           text-decoration: underline;
-       }
+      #headerend > div > button:nth-child(3) {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"
+  ></script>
 
-<body id="body">
+  <body id="body">
     <div id="header"></div>
-    <div id="navbaroptions"  class="bg"></div>
+    <div id="navbaroptions" class="bg"></div>
 
-
-    
     <!-- searching start here -->
 
     <div id="newresults"></div>
 
     <!-- searching end here -->
 
-
-
-
     <div class="container">
-        <h2>S H O P P I N G &nbsp; B A G</h2>
+      <h2>S H O P P I N G &nbsp; B A G</h2>
     </div>
     <div class="container" id="cont">
-        <div id="cont11">
-            <div id="cont111">
-                <h4>DELIVER TO:</h4>
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1280px-Flag_of_India.svg.png" />
-                <h4 id="dispCont">India</h4>
-                <img id="img"
-                    src="https://cdn4.iconfinder.com/data/icons/modern-user-interface-6/60/right__arrow__sign__symbol__interface-512.png">
-                <select id="select">
-                    <option>India</option>
-                    <option>Australia</option>
-                    <option>England</option>
-                    <option>Pakistan</option>
-                    <option>U. S. A.</option>
-                    <option>China</option>
-                    <option>Africa</option>
-                    <option>Dubai</option>
-                    <option>Australia</option>
-                    <option>Russia</option>
-                    <option>Pakistan</option>
-                    <option>Japan</option>
-                    <option>Korea</option>
-                    <option>lanka</option>
-                </select>
-            </div>
-            <div id="cont112">
-            </div>
-            <div id="cont113">
-                <ul>
-                    <h4>NOTIFICATION (6)</h4>
-                    <li>Due to recent flight scheduling changes, orders may experience delivery delays.</li>
-                    <li>Due to current situation, a 3.5% freight surcharge will be applied to your order</li>
-                    <li>Please note that delivery to your selected region will be delayed because order dispatches are
-                        on hold due to shipping restrictions.</li>
-                    <li>For more information, please contact info@strawberrynet.com.</li>
-                    <li>This order may be subject to duties and taxes, which are payable by the customer and are not
-                        refundable.</li>
-                    <li>Due to recent flight scheduling changes, orders may experience delivery delays.</li>
-                </ul>
-            </div>
+      <div id="cont11">
+        <div id="cont111">
+          <h4>DELIVER TO:</h4>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1280px-Flag_of_India.svg.png"
+          />
+          <h4 id="dispCont">India</h4>
+          <img
+            id="img"
+            src="https://cdn4.iconfinder.com/data/icons/modern-user-interface-6/60/right__arrow__sign__symbol__interface-512.png"
+          />
+          <select id="select">
+            <option>India</option>
+            <option>Australia</option>
+            <option>England</option>
+            <option>Pakistan</option>
+            <option>U. S. A.</option>
+            <option>China</option>
+            <option>Africa</option>
+            <option>Dubai</option>
+            <option>Australia</option>
+            <option>Russia</option>
+            <option>Pakistan</option>
+            <option>Japan</option>
+            <option>Korea</option>
+            <option>lanka</option>
+          </select>
         </div>
-        <div id="cont12">
-            <div id="inline">
-                <div>
-                    <h5>Check out as</h5>
-                </div>
-                <div id="appname1"></div>
-                <div>
-                    <h5>?</h5>
-                </div>
-            </div>
-            <a href="checkout.html"><button>CHECKOUT</button></a>
-            <hr />
-            <div id="inline2">
-                <div>
-                    <h5>Sign out</h5>
-                </div>
-                <div id="appname2"></div>
-                <div>
-                    <h5>?</h5>
-                </div>
-            </div>
-            <button>SIGN OUT</button>
+        <div id="cont112"></div>
+        <div id="cont113">
+          <ul>
+            <h4>NOTIFICATION (6)</h4>
+            <li>
+              Due to recent flight scheduling changes, orders may experience
+              delivery delays.
+            </li>
+            <li>
+              Due to current situation, a 3.5% freight surcharge will be applied
+              to your order
+            </li>
+            <li>
+              Please note that delivery to your selected region will be delayed
+              because order dispatches are on hold due to shipping restrictions.
+            </li>
+            <li>
+              For more information, please contact info@strawberrynet.com.
+            </li>
+            <li>
+              This order may be subject to duties and taxes, which are payable
+              by the customer and are not refundable.
+            </li>
+            <li>
+              Due to recent flight scheduling changes, orders may experience
+              delivery delays.
+            </li>
+          </ul>
         </div>
+      </div>
+      <div id="cont12">
+        <div id="inline">
+          <div>
+            <h5>Check out as</h5>
+          </div>
+          <div id="appname1"></div>
+          <div>
+            <h5>?</h5>
+          </div>
+        </div>
+        <a href="checkout.html"><button>CHECKOUT</button></a>
+        <hr />
+        <div id="inline2">
+          <div>
+            <h5>Sign out</h5>
+          </div>
+          <div id="appname2"></div>
+          <div>
+            <h5>?</h5>
+          </div>
+        </div>
+        <button>SIGN OUT</button>
+      </div>
     </div>
     <div class="container" id="slider">
-        <h3>Product Spotlight</h3>
-        <div id="slide">
-            <div><img
-                    src="https://www.kindpng.com/picc/m/130-1302304_arrow-left-pointing-direction-pointer-purple-name-of.png"
-                    id="swapleft" /></div>
-            <div id="cont61"></div>
-            <div><img
-                    src="https://w7.pngwing.com/pngs/892/636/png-transparent-arrow-right-arrow-purple-television-angle.png"
-                    id="swapright" /></div>
+      <h3>Product Spotlight</h3>
+      <div id="slide">
+        <div>
+          <img
+            src="https://www.kindpng.com/picc/m/130-1302304_arrow-left-pointing-direction-pointer-purple-name-of.png"
+            id="swapleft"
+          />
         </div>
+        <div id="cont61"></div>
+        <div>
+          <img
+            src="https://w7.pngwing.com/pngs/892/636/png-transparent-arrow-right-arrow-purple-television-angle.png"
+            id="swapright"
+          />
+        </div>
+      </div>
     </div>
-
-
-
-
-
 
     <!-- FOOTER JS END -->
 
@@ -134,15 +164,21 @@
 
     <!-- FOOTER JS END -->
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-<script type="module">
-    import {headerupper,navbarbelow } from './js elements/header.js'
-    let head = document.getElementById('header')
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+  <script type="module">
+    import { headerupper, navbarbelow } from "./js elements/header.js";
+    let head = document.getElementById("header");
     head.innerHTML = headerupper();
-    let navbaroptions=document.getElementById("navbaroptions");
-  navbaroptions.innerHTML=navbarbelow();
+    let navbaroptions = document.getElementById("navbaroptions");
+    navbaroptions.innerHTML = navbarbelow();
 
     // END FOOTER JS PART
 
@@ -270,17 +306,13 @@
       showdatainpage.append(div);
     }
 
+    var footerEndPush = document.getElementById("footerEndPush");
 
+    import footer from "./js elements/footer.js";
 
+    footerEndPush.innerHTML = footer();
 
-var footerEndPush = document.getElementById('footerEndPush')
-
-import footer from './js elements/footer.js'
-
-footerEndPush.innerHTML = footer()
-
-// END FOOTER JS PART
-</script>
-<script src="./js elements/bag.js"></script>
-
+    // END FOOTER JS PART
+  </script>
+  <script src="./js elements/bag.js"></script>
 </html>
