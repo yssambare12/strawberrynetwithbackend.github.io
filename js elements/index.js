@@ -216,8 +216,6 @@ function showProducts() {
 
     addtocart_btn.onclick = function () {
       addtoCart(product);
-      //showalert(product);
-      Swal.fire("Good job!", "Added product to Cart Successfully", "success");
     };
 
     div.append(img, prod_name, prod_price, addtocart_btn);
@@ -240,7 +238,7 @@ function addtoCart(p) {
     body:JSON.stringify(p),
     headers: {"Content-type": "application/json; charset=UTF-8"}
   }) .then(res=>{
-    return alert(`${p.title} Added to cart successfully`)
+    return Swal.fire("Good job!", `Added ${p.title} to Cart Successfully`, "success");
   }) .catch((e)=>{
     return alert("Something went wrong")
   })
