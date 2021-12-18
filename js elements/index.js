@@ -29,54 +29,54 @@ function showSlides() {
 let data = [
   {
     id: "1001",
-    title: "Biotherm",
-    price: 217.59,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/20527276721.jpg",
+    title: "Bottega Veneta Eau De Parfum Spray 75ml/2.5oz",
+    price: 1050.59,
+    thumbnail: "https://a.cdnsbn.com/images/products/250/13101119406.jpg",
   },
   {
     id: "1002",
-    title: "Men's Tek Gear® Ultra Soft Fleece Hoodie",
-    price: 117.59,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/26161080301.jpg",
+    title: "Elizabeth Arden Ceramide Vitamin C Capsules - Radiance Renewal Serum 90caps",
+    price: 626.90,
+    thumbnail: "https://a.cdnsbn.com/images/products/250/26636580501.jpg",
   },
   {
     id: "1003",
-    title: "Men's Tek Gear®  Hoodie[yellow]",
-    price: 179.59,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/15399718806.jpg",
+    title: "Jo Malone Blackberry & Bay Body Creme 175ml/5.9ozodie[yellow]",
+    price: 725.45,
+    thumbnail: "https://a.cdnsbn.com/images/products/250/21776389503.jpg",
   },
   {
     id: "1004",
-    title: "Men's Ultra Soft Fleece Hoodie",
-    price: 201.59,
-    thumbnail: "https://a.cdnsbn.com/images/products/250/12804580601.jpg",
+    title: "Moroccanoil Moisture Repair Shampoo (For Weakened and Damaged Hair) 1000ml/33.8oz",
+    price: 544.10,
+    thumbnail: "https://a.cdnsbn.com/images/products/250/17653399444.jpg",
   },
   {
     id: "1005",
-    title: "Men's Ultra Soft Fleece Hoodie",
-    price: 195.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/04807024702.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "Men's Ultra Soft Fleece Hoodie",
-    price: 315.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/25040937905.jpg",
+    title: "NARS Powermatte Lip Pigment - # Call Me (Coral) 5.5ml/0.18oz",
+    price: 141.95,
+    thumbnail: "https://b.cdnsbn.com/images/products/250/25379702602.jpg",
   },
 
   {
     id: "1005",
-    title: "Men's Ultra Soft Fleece Hoodie",
-    price: 415.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/25402385944.jpg",
+    title: "Olaplex No. 3 Hair Perfector 100ml/3.3oz",
+    price: 228.79,
+    thumbnail: "https://b.cdnsbn.com/images/products/250/25401885944.jpg",
   },
 
   {
     id: "1005",
-    title: "Men's Ultra Soft Fleece Hoodie",
+    title: "Shu Uemura Eyelash Curler",
+    price: 141.95,
+    thumbnail: "https://b.cdnsbn.com/images/products/250/05570877709.jpg",
+  },
+
+  {
+    id: "1005",
+    title: "Skin Ceuticals H.A Intensifier - Hyaluronic Acid Intensifier 30ml/1oz",
     price: 175.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/23542481401.jpg",
+    thumbnail: "https://b.cdnsbn.com/images/products/250/21144796301.jpg",
   },
   // 11.11 BUDGET ZONE
   {
@@ -139,61 +139,61 @@ let data = [
   },
 
   // DAILY SPECIALS
+ //changing
+ {
+   id: "1005",
+   title: "Men's Ultra Soft Fleece Hoodie",
+   price: 175.99,
+   thumbnail: "https://b.cdnsbn.com/images/products/250/23542481401.jpg",
+ },
 
   {
     id: "1005",
-    title: "Men's Ultra Soft Fleece Hoodie",
-    price: 175.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/23542481401.jpg",
+    title: "Moisture Repair Shampoo (For Weakened and Damaged Hair) 1000ml/33.8oz",
+    price: 267.50,
+    thumbnail: "https://a.cdnsbn.com/images/products/250/17653399444.jpg",
   },
 
   {
     id: "1005",
-    title: "Men's Ultra Soft Fleece Hoodie",
-    price: 175.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/23542481401.jpg",
+    title: "Powermatte Lip Pigment - # Call Me (Coral) 5.5ml/0.18oz",
+    price: 1409.50,
+    thumbnail: "https://b.cdnsbn.com/images/products/250/25379702602.jpg",
   },
 
   {
     id: "1005",
-    title: "Men's Ultra Soft Fleece Hoodie",
-    price: 175.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/23542481401.jpg",
+    title: "Dolce & Gabbana Pour Femme Eau De Parfum Spray 50ml/1.6oz",
+    price: 375.99,
+    thumbnail: "https://a.cdnsbn.com/images/products/250/14877939506.jpg",
   },
 
   {
     id: "1005",
-    title: "Men's Ultra Soft Fleece Hoodie",
-    price: 175.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/23542481401.jpg",
+    title: "Estee Lauder New Dimension Firm + Fill Eye System 10ml/0.34oz",
+    price: 563.50,
+    thumbnail: "https://a.cdnsbn.com/images/products/250/20143580601.jpg",
   },
 
   {
     id: "1005",
-    title: "Men's Ultra Soft Fleece Hoodie",
-    price: 175.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/23542481401.jpg",
+    title: "Shiseido Ultimune Power Infusing Concentrate - ImuGeneration Technology 30ml/1oz",
+    price: 450.00,
+    thumbnail: "https://b.cdnsbn.com/images/products/250/22495081401.jpg",
   },
 
   {
     id: "1005",
-    title: "Men's Ultra Soft Fleece Hoodie",
-    price: 175.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/23542481401.jpg",
+    title: "Kerastase Elixir Ultime Le Masque Sublimating Oil Infused Masque (Dull Hair) 200ml/6.8oz",
+    price: 446.50,
+    thumbnail: "https://b.cdnsbn.com/images/products/250/23431000444.jpg",
   },
 
   {
     id: "1005",
-    title: "Men's Ultra Soft Fleece Hoodie",
-    price: 175.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/23542481401.jpg",
-  },
-
-  {
-    id: "1005",
-    title: "Men's Ultra Soft Fleece Hoodie",
-    price: 175.99,
-    thumbnail: "https://b.cdnsbn.com/images/products/250/23542481401.jpg",
+    title: "La Roche Posay Lipikar Surgras Concentrated Shower-Cream 200ml/6.7oz",
+    price: 560.99,
+    thumbnail: "https://b.cdnsbn.com/images/products/250/14772408103.jpg",
   },
 ];
 let parent = document.getElementById("products");
