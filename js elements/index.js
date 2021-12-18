@@ -102,7 +102,8 @@ let data = [
 
   {
     id: "1005",
-    title: "Clinique True Bronze Pressed Powder Bronzer - No. 02 Sunkissed 9.6g/0.33oz",
+    title:
+      "Clinique True Bronze Pressed Powder Bronzer - No. 02 Sunkissed 9.6g/0.33oz",
     price: 24.98,
     thumbnail: "https://a.cdnsbn.com/images/products/250/04774080402.jpg",
   },
@@ -123,14 +124,16 @@ let data = [
 
   {
     id: "1005",
-    title: "Valentino Valentina Acqua Floreale Eau De Toilette Spray 50ml/1.7oz",
+    title:
+      "Valentino Valentina Acqua Floreale Eau De Toilette Spray 50ml/1.7oz",
     price: 59.99,
     thumbnail: "https://b.cdnsbn.com/images/products/250/15716565606.jpg",
   },
 
   {
     id: "1005",
-    title: "Yves Saint Laurent Rouge Pur Couture Vernis A Levres Pop Water Glossy Stain 6ml/0.2oz",
+    title:
+      "Yves Saint Laurent Rouge Pur Couture Vernis A Levres Pop Water Glossy Stain 6ml/0.2oz",
     price: 31.99,
     thumbnail: "https://b.cdnsbn.com/images/products/250/18763681702.jpg",
   },
@@ -235,16 +238,19 @@ function addtoCart(p) {
 
   fetch("http://localhost:4000/cart", {
     method: "POST",
-    body:JSON.stringify(p),
-    headers: {"Content-type": "application/json; charset=UTF-8"}
-  }) .then(res=>{
-    return Swal.fire("Good job!", `Added ${p.title} to Cart Successfully`, "success");
-  }) .catch((e)=>{
-    return alert("Something went wrong")
+    body: JSON.stringify(p),
+    headers: { "Content-type": "application/json; charset=UTF-8" },
   })
-
-
-
+    .then((res) => {
+      return Swal.fire(
+        "Good job!",
+        `Added ${p.title} to Cart Successfully`,
+        "success"
+      );
+    })
+    .catch((e) => {
+      return alert("Something went wrong");
+    });
 
   let kohl_cart = JSON.parse(localStorage.getItem("cart"));
   kohl_cart.push(p);
@@ -687,7 +693,6 @@ function show61(d) {
     addtocartbtn.backgroundColor = "white";
     addtocartbtn.style.marginLeft = "2%";
     addtocartbtn.onclick = function () {
-      Swal.fire("Good job!", "Added product to Cart Successfully", "success");
       addtoCart(prod);
       showalert(prod);
     };
