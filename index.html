@@ -337,6 +337,13 @@
         price.innerText = d.price;
         let addtocartbtn = document.createElement("button");
         addtocartbtn.innerText = "Add to cart";
+        addtocart_btn.onclick = function () {
+          Swal.fire(
+            "Good job!",
+            "Added product to Cart Successfully",
+            "success"
+          );
+        };
         addtocartbtn.backgroundColor = "white";
         addtocartbtn.style.marginLeft = "3%";
         div.append(img, name, price, addtocartbtn);
@@ -422,6 +429,9 @@
       price.innerText = d.price;
       let addtocartbtn = document.createElement("button");
       addtocartbtn.innerText = "Add to cart";
+      addtocart_btn.onclick = function () {
+        Swal.fire("Good job!", "Added product to Cart Successfully", "success");
+      };
       addtocartbtn.backgroundColor = "white";
       addtocartbtn.style.marginLeft = "3%";
       div.append(img, name, price, addtocartbtn);

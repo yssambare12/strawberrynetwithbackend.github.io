@@ -1,10 +1,10 @@
 const { Schema, model } = require("mongoose");
 const cartpageSchema = new Schema(
   {
-    name: { type: String },
+    title: { type: String },
     price: { type: String },
-    id: { type: Number },
-    img: { type: String },
+    id: { type: String },
+    thumbnail: { type: String },
   },
   {
     versionKey: false,

@@ -1,5 +1,5 @@
 function footer() {
-    return `
+  return `
 <!-- FOOTER WHOLE PART -->
 
 <!-- FIRST BOX -->
@@ -150,7 +150,7 @@ function footer() {
 
 
 <!-- FOOTER WHOLE PART -->
-`
+`;
 }
 
-export default footer
+export default footer;
