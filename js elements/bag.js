@@ -31,11 +31,11 @@ if (par == null) {
     div.style.marginTop = "10px";
     div.style.gap = "10px";
     let imgs = document.createElement("img");
-    imgs.src = p.img;
+    imgs.src = p.thumbnail;
     imgs.style.width = "20%";
     imgs.style.height = "150px";
     let title = document.createElement("p");
-    title.innerText = p.name;
+    title.innerText = p.title;
     title.style.width = "60%";
     let price = document.createElement("p");
     price.innerText = p.price;
