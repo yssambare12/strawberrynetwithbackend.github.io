@@ -314,7 +314,7 @@ function displaynone() {
 async function searchProduct() {
   try {
     querry = document.getElementById("inputdata").value;
-    let res = await fetch(`http://localhost:4000/skincare`);
+    let res = await fetch(`https://nodejs-website-strawberrynet.herokuapp.com/skincare`);
     let data = await res.json();
     return data.skincareproducts;
   } catch (e) {

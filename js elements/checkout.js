@@ -1,7 +1,7 @@
 let cont112 = document.getElementById("cont112");
 // let par = JSON.parse(localStorage.getItem('cart'))
 async function getdata() {
-  let res = await fetch(`http://localhost:4000/cart`);
+  let res = await fetch(`https://nodejs-website-strawberrynet.herokuapp.com/cart`);
   let data = await res.json();
   console.log(data.cartitem);
   rock(data.cartitem);

@@ -1,5 +1,5 @@
 async function getdata() {
-  let res = await fetch(`http://localhost:4000/perfume`);
+  let res = await fetch(`https://nodejs-website-strawberrynet.herokuapp.com/perfume`);
   let data = await res.json();
   //console.log(data)
   //console.log(data.perfumeproducts);
@@ -74,7 +74,7 @@ function gotonewarr(product) {
 let list = document.getElementById("list");
 list.addEventListener("click", showlist);
 async function showlist() {
-  let res = await fetch(`http://localhost:4000/perfume`);
+  let res = await fetch(`https://nodejs-website-strawberrynet.herokuapp.com/perfume`);
   let data = await res.json();
   console.log(data);
   console.log(data.perfumeproducts);
@@ -170,7 +170,7 @@ function getchange() {
   }
 }
 async function showlistbypop() {
-  let res = await fetch(`http://localhost:4000/perfume`);
+  let res = await fetch(`https://nodejs-website-strawberrynet.herokuapp.com/perfume`);
   let data = await res.json();
   console.log(data);
   console.log(data.perfumeproducts);
@@ -182,7 +182,7 @@ async function showlistbypop() {
   showdatainlist(sor);
 }
 async function lowtohi() {
-  let res = await fetch(`http://localhost:4000/perfume`);
+  let res = await fetch(`https://nodejs-website-strawberrynet.herokuapp.com/perfume`);
   let data = await res.json();
   console.log(data);
   console.log(data.perfumeproducts);
@@ -194,7 +194,7 @@ async function lowtohi() {
   showdatainlist(sor);
 }
 async function atoz() {
-  let res = await fetch(`http://localhost:4000/perfume`);
+  let res = await fetch(`https://nodejs-website-strawberrynet.herokuapp.com/perfume`);
   let data = await res.json();
   console.log(data);
   console.log(data.perfumeproducts);
@@ -206,7 +206,7 @@ async function atoz() {
   showdatainlist(sor);
 }
 async function ztoa() {
-  let res = await fetch(`http://localhost:4000/perfume`);
+  let res = await fetch(`https://nodejs-website-strawberrynet.herokuapp.com/perfume`);
   let data = await res.json();
   console.log(data);
   console.log(data.perfumeproducts);
@@ -271,7 +271,7 @@ function displaynone() {
 async function searchProduct() {
   try {
     querry = document.getElementById("inputdata").value;
-    let res = await fetch(`http://localhost:4000/perfume`);
+    let res = await fetch(`https://nodejs-website-strawberrynet.herokuapp.com/perfume`);
     let data = await res.json();
     return data.skincareproducts;
   } catch (e) {

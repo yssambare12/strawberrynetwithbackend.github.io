@@ -235,7 +235,7 @@ var counter = 0;
 function addtoCart(p) {
   console.log(p);
 
-  fetch("http://localhost:4000/cart", {
+  fetch("https://nodejs-website-strawberrynet.herokuapp.com/cart", {
     method: "POST",
     body: JSON.stringify(p),
     headers: { "Content-type": "application/json; charset=UTF-8" },
