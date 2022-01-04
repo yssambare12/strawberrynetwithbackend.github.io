@@ -1,5 +1,5 @@
 async function getdata() {
-  let res = await fetch(`http://localhost:4000/perfume`);
+  let res = await fetch(`https://nodejs-website-strawberrynet.herokuapp.com/perfume`);
   let data = await res.json();
   //console.log(data)
   //console.log(data.perfumeproducts);
