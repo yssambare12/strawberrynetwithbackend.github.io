@@ -5,16 +5,16 @@ const hbs = require("hbs");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-require("./db/conn");
-const Register = require("./models/registers");
+require("./src/db/conn");
+const Register = require("./src/models/registers");
 const { json } = require("express");
 const { log } = require("console");
 
 const port = process.env.PORT || 3000;
 
-const static_path = path.join(__dirname, "../public" );
-const template_path = path.join(__dirname, "../templates/views" );
-const partials_path = path.join(__dirname, "../templates/partials" );
+const static_path = path.join(__dirname, "./public" );
+const template_path = path.join(__dirname, "./templates/views" );
+const partials_path = path.join(__dirname, "./templates/partials" );
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
