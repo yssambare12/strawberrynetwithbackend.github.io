@@ -2,7 +2,7 @@ Check Project On Live Mode
 https://yssambare12.github.io/strawberrynetwithbackend.github.io/
 
 
-# Kohl's.com Website Clone
+# Strawberrynet.com Website Clone
 ## https://strawberrynet.com/
 
 
