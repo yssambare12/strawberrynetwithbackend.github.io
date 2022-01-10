@@ -35,7 +35,7 @@ This is the clone of strawberrynet.com ,This Is Ecommerce Webisite We are Develo
 ### Installation 
 * Clone the repository
     ``` 
-    https://github.com/DharmeshRS/kohls_Clone.git
+    https://github.com/yssambare12/strawberrynetwithbackend.github.io/blob/main/README.md
     ```
 ### Website Flow
 * Homepage of Website.
