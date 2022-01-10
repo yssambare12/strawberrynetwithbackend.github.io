@@ -56,6 +56,10 @@ This is the clone of strawberrynet.com ,This Is Ecommerce Webisite We are Develo
   <img src="https://miro.medium.com/max/1925/1*mARvPPmnLPkqUQjq_xURVA.png">
 
 ## Contributors :
-* [Aakash Naykude]
+* [Aakash Naykude](https://github.com/Aakash-Naykude)
 * [Yogesh Sambhare](https://github.com/yssambare12)
+* [Vani A](https://github.com/vani-231) 
+* [Chinmayi H](https://github.com/chinmayisuresh)
+* [Rohit Kumar](https://github.com/Rohit-0310)
+* [Narendra Kumar](https://github.com/narendrapanchal)
 
