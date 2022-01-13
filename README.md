@@ -1,10 +1,8 @@
-Check Project On Live Mode 
-https://yssambare12.github.io/strawberrynetwithbackend.github.io/
-
 
 # Strawberrynet.com Website Clone
-## https://strawberrynet.com/
 
+# Check Project On Live Mode 
+https://yssambare12.github.io/strawberrynetwithbackend.github.io/
 
 This is the clone of strawberrynet.com ,This Is Ecommerce Webisite We are Develope this Website in  UNIT 4 construct week.We Done This Website with Different types of Functionalities using Advance JavaScript, Nodejs, MangoDB and expressJS
 <!-- ![Clone of strawberrynet.com](https://miro.medium.com/max/1025/1*pu7gy-oQMefCge7Zr4KEBA.png) -->
