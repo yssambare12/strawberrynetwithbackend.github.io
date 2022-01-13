@@ -29,6 +29,13 @@ This is the clone of strawberrynet.com ,This Is Ecommerce Webisite We are Develo
 ### Prerequisites 
 * VS Code
 
+# Tech Stack
+* HTML
+* Css
+* Javascript
+* NodeJS
+* MongoDB
+* Bootstrap
 
 ### Installation 
 * Clone the repository
