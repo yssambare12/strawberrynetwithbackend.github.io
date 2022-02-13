@@ -232,7 +232,7 @@
   async function fetchData() {
     let itemneedned = searchdata.value;
     let res = await fetch(
-      `https://serpapi.com/search.json?engine=google&q=${itemneedned}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`
+      `https://serpapi.com/search.json?engine=google&q=${itemneedned}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=a97958c2af388fd67fa25a5ffff96640f9c08804383e96d7a5048e372e559f73`
     );
     let data = await res.json();
     console.log(data);
@@ -307,7 +307,7 @@
   async function startshowofsug(data) {
     onlineSearch.textContent = null;
     let res = await fetch(
-      `https://serpapi.com/search.json?engine=google&q=${data}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`
+      `https://serpapi.com/search.json?engine=google&q=${data}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=a97958c2af388fd67fa25a5ffff96640f9c08804383e96d7a5048e372e559f73`
     );
 
     let respdata = await res.json();
