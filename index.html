@@ -398,7 +398,7 @@
       let respdata = await res.json();
 
       let newdata = respdata.shopping_results;
-      console.log(respdata.shopping_results);
+      console.log(respdata);
       newdata.forEach(function (d) {
         let p = document.createElement("p");
         p.innerText = d.title;
