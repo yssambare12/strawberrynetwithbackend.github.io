@@ -300,4 +300,6 @@ input {
   display: none;
   overflow: scroll;
   padding: 10px;
+  z-index: 5;
+  color:black;
 }
